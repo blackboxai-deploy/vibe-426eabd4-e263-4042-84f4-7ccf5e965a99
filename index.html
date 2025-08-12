@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Dodgefall</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <canvas id="game"></canvas>
+    <div id="ui">
+      <div id="title">Dodgefall</div>
+      <div id="subtitle">Use Arrow keys / WASD to move. Survive as long as you can.</div>
+      <button id="start-btn">Start</button>
+    </div>
+    <div id="hud">
+      <div class="hud-item">Score: <span id="score">0</span></div>
+      <div class="hud-item">Best: <span id="best">0</span></div>
+    </div>
+    <div id="gameover" class="hidden">
+      <div id="gameover-title">Game Over</div>
+      <div id="final-score">Score: 0</div>
+      <button id="restart-btn">Play Again</button>
+    </div>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
